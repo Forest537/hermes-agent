@@ -399,7 +399,7 @@ function playVariant(variantId: number) {
   tone.type = 'lowpass'
   tone.frequency.setValueAtTime(3800, ac.currentTime)
   tone.Q.setValueAtTime(0.32, ac.currentTime)
-  master.gain.setValueAtTime(0.48, ac.currentTime)
+  master.gain.setValueAtTime(0.8, ac.currentTime)
   master.connect(tone)
 
   const dry = ac.createGain()
